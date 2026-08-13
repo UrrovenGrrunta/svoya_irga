@@ -1,0 +1,18 @@
+#pyproject.toml
+
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "svoya-igra"
+version = "0.1.0"
+description = "Simple party app based on the TV show «Jeopardy!»."
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+svoya-igra = "svoya_igra.main:main"
+
+[project.optional-dependencies]
+dev = ["pytest"]
